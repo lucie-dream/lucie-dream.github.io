@@ -11,6 +11,7 @@
   charset="utf-8">
   <link rel="stylesheet" href="src/scooch.css">
   <link rel="stylesheet" href="src/scooch-style.css">
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
   <style>
   /* styling for this page */
   .m-scooch {
@@ -64,6 +65,8 @@
 
     </div>
   </div>
+  <a id="kakao-link-btn" href="javascript:;">초대링크
+  </a>
   <!-- <script src="http://zeptojs.com/zepto.js"></script> -->
   <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
 
@@ -71,5 +74,26 @@
   <script>$('#m-scooch-hide-arrows').scooch({autoHideArrows:true});</script>
   <script>$('#m-scooch-no-animate').scooch({animate:false});</script>
   <script>$('.m-scooch').scooch();</script>
+
+  <script>
+  // 사용할 앱의 JavaScript 키를 설정해 주세요.
+  Kakao.init('6746408e8a12cd6bee40acfe66643dc4');
+
+  // 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+  Kakao.Link.createTalkLinkButton({
+    container: '#kakao-link-btn',
+    label: '[일요수다] 초대장   ',
+    image: {
+      src: 'https://d30y9cdsu7xlg0.cloudfront.net/png/76005-200.png',
+      width: '300',
+      height: '200'
+    },
+    webButton: {
+      text: '[초대]',
+      url: 'http://lucie-dream.github.io' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+    }
+  });
+  </script>
+
 </body>
 </html>
