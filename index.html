@@ -6,7 +6,7 @@
   <link rel="image_src" href="https://d30y9cdsu7xlg0.cloudfront.net/png/76005-200.png" />
   <meta property="og:image" content="https://avatars0.githubusercontent.com/u/16729530?v=3&s=460" />
   <meta property="og:title" content="[일요수다] 초대장" />
-  <meta property="og:description" content="초대합니다루" />
+  <meta property="og:description" content="초대합니다" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
   charset="utf-8">
   <link rel="stylesheet" href="src/scooch.css">
@@ -43,18 +43,22 @@
   </style>
 </head>
 <body>
-  <h2>안녕안녕안녕</h2>
-  <p>헤헤헤헤헤</p>
   <div class="m-scooch m-fluid m-scooch-photos" id="m-scooch-example-2">
     <div class="m-scooch-inner">
       <div class="m-item">
-        <img src="https://s-media-cache-ak0.pinimg.com/736x/1b/22/8d/1b228da594f9c1ac16ec31971fc03c78.jpg">
+        <img src="./src/fin.001.jpeg">
       </div>
       <div class="m-item">
-        <img src="https://img1.etsystatic.com/039/2/6280749/il_570xN.521179053_d3mj.jpg">
+        <img src="./src/fin.002.jpeg">
       </div>
       <div class="m-item">
-        <img src="http://www.annedirkse.com/wp-content/uploads/2014/07/milky-way-concordia-pakistan-karakoram-range-shooting-star-480x640.jpg">
+        <img src="./src/fin.003.jpeg">
+      </div>
+      <div class="m-item">
+        <img src="./src/fin.004.jpeg">
+      </div>
+      <div class="m-item">
+        <img src="./src/fin.005.jpeg">
       </div>
 
     </div>
@@ -62,11 +66,15 @@
       <a href="#" data-m-slide="1">1</a>
       <a href="#" data-m-slide="2">2</a>
       <a href="#" data-m-slide="3">3</a>
-
+      <a href="#" data-m-slide="4">4</a>
+      <a href="#" data-m-slide="5">5</a>
     </div>
   </div>
-  <a id="kakao-link-btn" href="javascript:;">초대링크
+
+  <a id="kakao-link-btn" href="javascript:;">
+    <img src="./src/external_link.png" height="10" width="10">
   </a>
+
   <!-- <script src="http://zeptojs.com/zepto.js"></script> -->
   <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
 
@@ -82,14 +90,14 @@
   // 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
   Kakao.Link.createTalkLinkButton({
     container: '#kakao-link-btn',
-    label: '[일요수다] 초대장   ',
+    label: '[일요수다] 초대장',
     image: {
       src: 'https://avatars0.githubusercontent.com/u/16729530?v=3&s=460',
       width: '300',
       height: '200'
     },
     webButton: {
-      text: '[초대]',
+      text: '초대장 보러가기',
       url: 'http://lucie-dream.github.io' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
     }
   });
